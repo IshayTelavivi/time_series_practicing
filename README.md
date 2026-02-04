@@ -16,5 +16,5 @@ The challenge was to build a model that predicts the next 28 days.
 I chose to use classic ML where some of my features are previous sequential data, and some are engineered features, based on sequential data aggregation, temporal features, events and price fluctuations. The processing and feature engineering is in `preprocessing.ipynb`.
 
 For training I used two methods:
-- Forecasting each one of the 28 days independently (in `lgbm_training_nulti_output.ipynb`)
+- Forecasting each one of the 28 days independently (in `lgbm_training_multi_output.ipynb`)
 - Chain regressor - forecasting each day based on the prediction of the previous days (in `lgbm_training_chain_regressor.ipynb`)
